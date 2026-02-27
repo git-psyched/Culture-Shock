@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CULTURE SHOCK | 100+ PATHOGEN EDITION</title>
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #020617; margin: 0; font-family: 'Press Start 2P', cursive; color: #334155; }
+    .poke-card { border: 4px solid #000; border-radius: 12px; background: #fff; box-shadow: inset -4px -4px 0px #cbd5e1; }
+    .hp-bar-bg { height: 12px; background: #1e293b; border: 2px solid #000; border-radius: 6px; overflow: hidden; }
+    .shake { animation: shake 0.2s cubic-bezier(.36,.07,.19,.97) both; }
+    @keyframes shake { 10%, 90% {transform: translate3d(-1px, 0, 0);} 20%, 80% {transform: translate3d(2px, 0, 0);} 30%, 50%, 70% {transform: translate3d(-4px, 0, 0);} 40%, 60% {transform: translate3d(4px, 0, 0);} }
+    ::-webkit-scrollbar { display: none; }
+    .bounce-in { animation: bounceIn 0.3s ease-out; }
+    @keyframes bounceIn { 0% {transform: scale(0.9); opacity: 0;} 100% {transform: scale(1); opacity: 1;} }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script src="micro_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
